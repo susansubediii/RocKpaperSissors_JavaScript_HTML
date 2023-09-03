@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scirpt.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body onload="displayBox()">
+ 
+    <div class="menu hidden">
+      <form class="px-4 py-3">
+        <div class="mb-3">
+          <label  class="form-label">Name:</label>
+          <input type="text" id="name" class="form-control"  placeholder="Enter your name">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Game Point:</label>
+          <input type="number" id="game-point" class="form-control" placeholder="Enter the count">
+        </div>
+        <button type="submit" class="popupBox-btn " onclick="save();" id="btn">Submit</button>
+      </form>
+    </div>
+
+    <div class="main"> 
+      <div class="computer-part">
+    <h1 style=" margin-left: 20px;">Computer</h1>
+
+          <div class="computer-card">
+            <img src="./image/paper.png" class="computer-paper hidden"  alt="">
+            <img src="./image/scissor.png" class="computer-scissor hidden" alt="">
+            <img src="./image/stone1.png" class="computer-rock hidden" alt="">
+          </div>
+        </div>
+        <div class="scoreboard">
+            <div class="computer-score">
+                <h1 id="computer-point">0</h1>
+            </div>
+            <h1>-</h1>
+            <div class="human-score">
+                <h1 id="human-point">0</h1>
+            </div>
+        </div>
+        <div class="human-part">
+    <h1 style="margin-left:54px ;" id="player">Human</h1>
+
+          <div class="human-card">
+
+            <img src="./image/paper.png" class="human-paper hidden" alt="">
+            <img src="./image/scissor.png" class="human-scissor hidden" alt="">
+            <img src="./image/stone1.png" class="human-rock hidden" alt="">
+          </div>
+        </div>
+        <div class="main-buttons">
+            <button onclick="rock();">Rock</button>
+            <button onclick="scissor();">Scissor</button>
+            <button onclick="paper();">Paper</button>
+          </div>
+    </div>
+    <div class="game-btn">
+      <button onclick="restart();">play Again</button>
+      <button onclick="change();">Setting</button>
+    </div>
+    <h1 id="result"></h1>
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+</html>

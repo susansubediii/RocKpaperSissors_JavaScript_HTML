@@ -1,0 +1,59 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.main{
+    display: flex;
+}
+.computer-part{
+    /* max-width: 50%; */
+    width: 250px;
+    height: 361px;
+    margin-top: 141px;
+    margin-left: 350px;
+    background-color: rgb(254, 255, 255);
+}
+.computer-card{
+    margin-top: 63px;
+}
+.human-card{
+    margin-top: 63px;
+}
+.computer-card img{
+    width: 250px;
+    height: 250px;
+}
+.human-card img{
+    width: 250px;
+    height: 250px;
+}
+.scoreboard{
+    height: 80px;
+    width: 160px;
+    margin-left: 80px;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.human-part {
+    width: 250px;
+    height: 361px;
+    margin-top: 141px;
+    margin-left: 80px;
+}
+.hidden{
+    display: none;
+} 
+.menu{
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    z-index: 999;
+    background-color: #fff;
+    width: 40rem;
+    height: 19rem;
+    border: 5px solid #5D6578;
+    border-radius: 10px;
+    padding: 1.5%;
+}
